@@ -1,0 +1,882 @@
+[
+ {
+  "layer": 6,
+  "neuron": 8046,
+  "score": 33.757,
+  "min_margin": 8.098,
+  "writes": [
+   "\u0120",
+   "\u4eba",
+   "/",
+   "1",
+   "\ud83d\udc3b",
+   "\u86cb",
+   "\\/",
+   "\u6b64\u4e3e"
+  ],
+  "suppresses": [
+   "\u2026and",
+   "\u2014who",
+   ",'\"",
+   "\u2026but"
+  ]
+ },
+ {
+  "layer": 35,
+  "neuron": 284,
+  "score": 15.315,
+  "min_margin": -0.607,
+  "writes": [
+   "Psychiat",
+   "stati",
+   "wichtig",
+   "mare",
+   "\u0437\u0438",
+   "contexto",
+   "\u3046\u3053\u3068",
+   "\u0436\u0430"
+  ],
+  "suppresses": [
+   "\uff0a",
+   "\u2010",
+   "\\/",
+   "\u200b"
+  ]
+ },
+ {
+  "layer": 35,
+  "neuron": 595,
+  "score": 8.401,
+  "min_margin": -0.298,
+  "writes": [
+   "\u7684\u8bf4\u6cd5",
+   "\u7684\u7231\u60c5",
+   "sodom",
+   "\u7684\u59bb\u5b50",
+   "\u7684\u7537\u4eba",
+   "\u7f51\u8baf",
+   "\u7684\u5230\u6765",
+   "disastr"
+  ],
+  "suppresses": [
+   "/or",
+   "/an",
+   "/",
+   "/w"
+  ]
+ },
+ {
+  "layer": 35,
+  "neuron": 3081,
+  "score": 8.334,
+  "min_margin": 3.734,
+  "writes": [
+   "tagName",
+   "ritch",
+   "lehem",
+   "urlString",
+   "samen",
+   "\",\"\",\"",
+   "newArr",
+   "hlen"
+  ],
+  "suppresses": [
+   "Regional",
+   "Internal",
+   "Interior",
+   "Composite"
+  ]
+ },
+ {
+  "layer": 35,
+  "neuron": 3,
+  "score": 8.256,
+  "min_margin": 0.399,
+  "writes": [
+   "\u6837\u7684",
+   "\uff0c\u300a",
+   "\uff1a\"",
+   "olas",
+   "\u60c5\u51b5\u8fdb\u884c",
+   "FTA",
+   "\u540e\u518d",
+   "\uff0a"
+  ],
+  "suppresses": [
+   "};",
+   "opport",
+   "/*<<<",
+   "invol"
+  ]
+ },
+ {
+  "layer": 35,
+  "neuron": 36,
+  "score": 7.782,
+  "min_margin": 1.058,
+  "writes": [
+   "acknow",
+   "boyc",
+   "insanely",
+   "hott",
+   "misunder",
+   "strugg",
+   ":\";",
+   "...\""
+  ],
+  "suppresses": [
+   "\u0120",
+   "ation",
+   "\u0435\u043d\u0438\u044f",
+   "\uac00"
+  ]
+ },
+ {
+  "layer": 35,
+  "neuron": 31,
+  "score": 7.354,
+  "min_margin": -4.105,
+  "writes": [
+   "operative",
+   "passionately",
+   "intimately",
+   "endlessly",
+   "repeatedly",
+   "punctuation",
+   "altogether",
+   "draining"
+  ],
+  "suppresses": [
+   "\u5927",
+   "\u6709",
+   "\u7684",
+   "\u3002"
+  ]
+ },
+ {
+  "layer": 35,
+  "neuron": 5742,
+  "score": 6.998,
+  "min_margin": 0.562,
+  "writes": [
+   "rone",
+   "\u0441\u043a\u043e\u043c",
+   "echa",
+   "\u0430\u0440\u044c",
+   "\u7b60",
+   "atts",
+   "orna",
+   "\u8d28\u91cf\u548c"
+  ],
+  "suppresses": [
+   "/tinyos",
+   "!!\");",
+   "\u300c",
+   "...\""
+  ]
+ },
+ {
+  "layer": 35,
+  "neuron": 925,
+  "score": 6.082,
+  "min_margin": 0.592,
+  "writes": [
+   "OOT",
+   "\u5df4\u62c9",
+   ".gif",
+   "ENDIF",
+   "a\u00f1",
+   "wand",
+   "\u0418\u041d",
+   "\u7396"
+  ],
+  "suppresses": [
+   "\u200b\u200b",
+   "\u0120",
+   ".getElementsByName",
+   "\u7591\u96be"
+  ]
+ },
+ {
+  "layer": 35,
+  "neuron": 5309,
+  "score": 6.011,
+  "min_margin": 0.429,
+  "writes": [
+   "\u0442\u043e\u0440\u0440",
+   "ICT",
+   "\u57d4",
+   "_Pods",
+   "IRC",
+   "_RSA",
+   "interopRequireDefault",
+   "\u043c\u0435\u0440\u043e\u043f"
+  ],
+  "suppresses": [
+   "DE",
+   "LE",
+   "DE",
+   "BE"
+  ]
+ },
+ {
+  "layer": 35,
+  "neuron": 600,
+  "score": 5.648,
+  "min_margin": 0.797,
+  "writes": [
+   "wrest",
+   "clandest",
+   "secretly",
+   "\u6d41\u6d6a",
+   "monster",
+   "dazz",
+   "confisc",
+   "confiscated"
+  ],
+  "suppresses": [
+   "uParam",
+   "Dial",
+   "Tray",
+   "avar"
+  ]
+ },
+ {
+  "layer": 34,
+  "neuron": 4537,
+  "score": 3.708,
+  "min_margin": 2.259,
+  "writes": [
+   "\u0441\u0442\u0435\u0440",
+   "\u6210\u5e74\u4eba",
+   "*(*",
+   ".zip",
+   "woo",
+   "Stack",
+   "-vars",
+   "inne"
+  ],
+  "suppresses": [
+   "!",
+   "!\\",
+   "!/",
+   "!\")"
+  ]
+ },
+ {
+  "layer": 34,
+  "neuron": 221,
+  "score": 3.386,
+  "min_margin": 1.345,
+  "writes": [
+   "\u6447\u4e86\u6447\u5934",
+   "guna",
+   "\u53e8",
+   "\u696b",
+   "\u6151",
+   "\u0e49\u0e19",
+   "\u8be5\u5982\u4f55",
+   "\u5f00\u59cb\u4e86"
+  ],
+  "suppresses": [
+   "take",
+   "meet",
+   "keep",
+   "continue"
+  ]
+ },
+ {
+  "layer": 33,
+  "neuron": 73,
+  "score": 3.286,
+  "min_margin": -0.784,
+  "writes": [
+   ")",
+   "\u7efe",
+   "\u8233",
+   "\u8be5\u9879",
+   "fla",
+   "comprise",
+   "ifi",
+   "cup"
+  ],
+  "suppresses": [
+   "Spend",
+   "Treat",
+   "Shotgun",
+   "Loved"
+  ]
+ },
+ {
+  "layer": 34,
+  "neuron": 199,
+  "score": 2.675,
+  "min_margin": 0.377,
+  "writes": [
+   ":\",",
+   "\u201d",
+   ".\"_",
+   "\uff1a%",
+   "PRES",
+   ")...",
+   "...\"",
+   "PARTIC"
+  ],
+  "suppresses": [
+   "1",
+   "\u0120",
+   "2",
+   "3"
+  ]
+ },
+ {
+  "layer": 34,
+  "neuron": 20,
+  "score": 2.609,
+  "min_margin": -0.149,
+  "writes": [
+   "Caldwell",
+   "ohl",
+   "Pruitt",
+   "\u304a\u3044",
+   "questioning",
+   "\u306e\u4e2d\u306b",
+   "\u1ea1m",
+   "Urs"
+  ],
+  "suppresses": [
+   "></",
+   "/>",
+   "/>",
+   "m\u00ea"
+  ]
+ },
+ {
+  "layer": 30,
+  "neuron": 2,
+  "score": 2.526,
+  "min_margin": 0.596,
+  "writes": [
+   "@a",
+   "in",
+   "ulls",
+   "\ufffd",
+   "\u0627\ufffd",
+   "cru",
+   "'al",
+   "'^"
+  ],
+  "suppresses": [
+   "\u4f46\u4e0d\u9650\u4e8e",
+   "localVar",
+   "\u200b\u200b",
+   "-than"
+  ]
+ },
+ {
+  "layer": 34,
+  "neuron": 2,
+  "score": 2.265,
+  "min_margin": -0.679,
+  "writes": [
+   "adem",
+   "butcher",
+   "\u8be5\u9662",
+   "externally",
+   "separately",
+   "hypoth",
+   "vertically",
+   "disadv"
+  ],
+  "suppresses": [
+   "shire",
+   "Surprise",
+   "InputChange",
+   "\u4eba\u5728"
+  ]
+ },
+ {
+  "layer": 34,
+  "neuron": 12,
+  "score": 2.232,
+  "min_margin": 0.461,
+  "writes": [
+   "\uff09",
+   "};",
+   "=",
+   "//",
+   "/",
+   "%",
+   "};",
+   ")."
+  ],
+  "suppresses": [
+   "\u0120\u010a",
+   "\u0120\u0120\u010a",
+   "\u0109\u010a",
+   "\u0120\u010a\u010a"
+  ]
+ },
+ {
+  "layer": 34,
+  "neuron": 4847,
+  "score": 1.882,
+  "min_margin": -0.256,
+  "writes": [
+   "aland",
+   "viz",
+   "Werk",
+   "alach",
+   "\\Context",
+   "Gow",
+   "fortunes",
+   "\u80b2\u4eba"
+  ],
+  "suppresses": [
+   "a\u00f1a",
+   "=~",
+   "omal",
+   "Bri"
+  ]
+ },
+ {
+  "layer": 30,
+  "neuron": 0,
+  "score": 1.844,
+  "min_margin": -0.358,
+  "writes": [
+   "negativity",
+   "opport",
+   "jue",
+   "grou",
+   "Italians",
+   "tum",
+   "smo",
+   "ascend"
+  ],
+  "suppresses": [
+   "\uff0a",
+   "\u2010",
+   "!--",
+   "\u2500\u2500"
+  ]
+ },
+ {
+  "layer": 34,
+  "neuron": 65,
+  "score": 1.783,
+  "min_margin": -0.25,
+  "writes": [
+   "\u71ce",
+   "juris",
+   "onis",
+   "\u7684\u65b9\u5f0f\u6765",
+   "\u012b",
+   "_cores",
+   "comprom",
+   "actu"
+  ],
+  "suppresses": [
+   "fb",
+   "xs",
+   "cf",
+   "pb"
+  ]
+ },
+ {
+  "layer": 30,
+  "neuron": 4763,
+  "score": 1.734,
+  "min_margin": -0.05,
+  "writes": [
+   "\u559c\u6b22",
+   "liking",
+   "\u559c\u597d",
+   "\u559c\u6b61",
+   "\u559c\u7231",
+   "preferences",
+   "preference",
+   "\u504f\u597d"
+  ],
+  "suppresses": [
+   "ocide",
+   "ilon",
+   "\u8c28",
+   "sole"
+  ]
+ },
+ {
+  "layer": 33,
+  "neuron": 8109,
+  "score": 1.721,
+  "min_margin": 1.139,
+  "writes": [
+   "\\",
+   "\\",
+   "^\\",
+   "``",
+   "\\u",
+   "\\\\",
+   "_\\",
+   "\\x"
+  ],
+  "suppresses": [
+   "\u2026)",
+   "\u2013",
+   "\u2014",
+   "...)"
+  ]
+ },
+ {
+  "layer": 30,
+  "neuron": 1684,
+  "score": 1.716,
+  "min_margin": -0.028,
+  "writes": [
+   "\u4e25\u8083",
+   "arge",
+   "\u4fef",
+   "joint",
+   "\u0431\u043e\u0440",
+   "joint",
+   "\u8fde\u7ebf",
+   "newline"
+  ],
+  "suppresses": [
+   "\u5c0f",
+   "\u5c0f\u4f19\u4f34",
+   "\u5c0f\u5c0f",
+   "\u5c0f\u4f19\u4f34\u4eec"
+  ]
+ },
+ {
+  "layer": 31,
+  "neuron": 459,
+  "score": 1.702,
+  "min_margin": 0.115,
+  "writes": [
+   "ermen",
+   "Flash",
+   "ream",
+   "swe",
+   "\u30d8\u30eb",
+   ".struts",
+   "\u4e2d\u5173",
+   "str"
+  ],
+  "suppresses": [
+   "\u98d9",
+   "Narrative",
+   "\u9760",
+   "ivariate"
+  ]
+ },
+ {
+  "layer": 33,
+  "neuron": 167,
+  "score": 1.695,
+  "min_margin": 0.957,
+  "writes": [
+   "requested",
+   "required",
+   "desired",
+   "continued",
+   "required",
+   "wanted",
+   "\u6709\u591a\u5927",
+   "needed"
+  ],
+  "suppresses": [
+   "need",
+   "need",
+   "needs",
+   "means"
+  ]
+ },
+ {
+  "layer": 31,
+  "neuron": 390,
+  "score": 1.69,
+  "min_margin": -0.292,
+  "writes": [
+   "\u043c\u043e\u043d",
+   "ryn",
+   "mek",
+   "\u1ee5c",
+   "_FALL",
+   "advertise",
+   "phia",
+   "_SC"
+  ],
+  "suppresses": [
+   "\u529e",
+   "\u4e00\u4e0b",
+   "\u53ed",
+   "mile"
+  ]
+ },
+ {
+  "layer": 34,
+  "neuron": 318,
+  "score": 1.684,
+  "min_margin": 0.982,
+  "writes": [
+   "-market",
+   "\u7c3f",
+   "dbName",
+   "bais",
+   "\u7f51\u8baf",
+   "\u5e02\u573a\u4e0a",
+   "\u662f\u4e00\u4e2a",
+   "lang"
+  ],
+  "suppresses": [
+   "conceptual",
+   "associ",
+   "procedural",
+   "analog"
+  ]
+ },
+ {
+  "layer": 34,
+  "neuron": 59,
+  "score": 1.679,
+  "min_margin": 0.494,
+  "writes": [
+   "ize",
+   "\u8eac",
+   "improv",
+   ",rp",
+   ",(",
+   "\u9535",
+   "mdi",
+   "andon"
+  ],
+  "suppresses": [
+   "\"};",
+   "\"};",
+   "'};",
+   "<$"
+  ]
+ },
+ {
+  "layer": 33,
+  "neuron": 875,
+  "score": 1.646,
+  "min_margin": -0.144,
+  "writes": [
+   "!",
+   "!",
+   "\uff01",
+   "!",
+   "!\"",
+   "!",
+   "!\u201d",
+   "!\\"
+  ],
+  "suppresses": [
+   "\u200e",
+   "\u200e",
+   "igm",
+   "enticator"
+  ]
+ },
+ {
+  "layer": 32,
+  "neuron": 34,
+  "score": 1.557,
+  "min_margin": 0.681,
+  "writes": [
+   "ivated",
+   "\u4fe6",
+   "mostat",
+   "kr\u00e4",
+   "\u30a4\u30c8",
+   "jspb",
+   "////////////////////////////////////////////////////////////////////////////////",
+   "======"
+  ],
+  "suppresses": [
+   "you",
+   "\u4f60",
+   "your",
+   "\u4f60\u7684"
+  ]
+ },
+ {
+  "layer": 31,
+  "neuron": 397,
+  "score": 1.496,
+  "min_margin": -0.141,
+  "writes": [
+   "\u5341\u4e94",
+   "[char",
+   "_BB",
+   "\u200b\u200b",
+   "pylint",
+   "tslint",
+   "sic",
+   "['"
+  ],
+  "suppresses": [
+   ",,,,",
+   ",,,",
+   ",,,,,,,,",
+   ").."
+  ]
+ },
+ {
+  "layer": 33,
+  "neuron": 377,
+  "score": 1.435,
+  "min_margin": 0.29,
+  "writes": [
+   "anium",
+   "=is",
+   "\u043a\u0430\u0437\u0430\u043b",
+   "NgModule",
+   "atitis",
+   "\u53c8\u8981",
+   "icap",
+   "\u0441\u0442\u0430\u043d\u0430\u0432\u043b\u0438"
+  ],
+  "suppresses": [
+   "are",
+   "\u90fd\u5f88",
+   "\u90fd\u662f",
+   "\u90fd\u975e\u5e38"
+  ]
+ },
+ {
+  "layer": 33,
+  "neuron": 267,
+  "score": 1.418,
+  "min_margin": 0.326,
+  "writes": [
+   "\"",
+   "\uff1a\"",
+   "\"",
+   "'",
+   "-\"",
+   "/\"",
+   "\u2014\"",
+   "'\""
+  ],
+  "suppresses": [
+   "\u201d,",
+   "\u201c[",
+   "\u201d",
+   "\u201d:"
+  ]
+ },
+ {
+  "layer": 31,
+  "neuron": 233,
+  "score": 1.413,
+  "min_margin": 0.07,
+  "writes": [
+   "half",
+   "\u5f02\u5730",
+   "\u6c11\u610f",
+   "ghan",
+   "half",
+   "\u21b5",
+   "\u91cd\u4e2d\u4e4b\u91cd",
+   "halfway"
+  ],
+  "suppresses": [
+   "\u00f3i",
+   "\u6709\u4e00\u4e2a",
+   "\u4e00\u4e2a",
+   ".Border"
+  ]
+ },
+ {
+  "layer": 26,
+  "neuron": 6508,
+  "score": 1.409,
+  "min_margin": 0.859,
+  "writes": [
+   "\u6709\u4e00\u4e9b",
+   "significant",
+   "\u65e0\u5173",
+   "\u5173\u4e8e\u6211\u4eec",
+   ".tm",
+   "folds",
+   "things",
+   "recogn"
+  ],
+  "suppresses": [
+   "\u7c73\u5c14",
+   "enrich",
+   "cherish",
+   "\u5bcc\u88d5"
+  ]
+ },
+ {
+  "layer": 32,
+  "neuron": 2353,
+  "score": 1.407,
+  "min_margin": 0.209,
+  "writes": [
+   "am",
+   "am",
+   "Am",
+   "-am",
+   "Am",
+   "'m",
+   "\u2019m",
+   ".am"
+  ],
+  "suppresses": [
+   "are",
+   "Are",
+   "\u90fd\u662f",
+   "\u90fd\u5f88"
+  ]
+ },
+ {
+  "layer": 33,
+  "neuron": 20,
+  "score": 1.39,
+  "min_margin": 0.147,
+  "writes": [
+   "\u010a\u0120\u0120\u0120\u010a",
+   "\ufffd",
+   "\u2026",
+   "\u5b98\u53f8",
+   "\ufffd",
+   "\u010a\u0120\u010a",
+   "\ufffd",
+   "apo"
+  ],
+  "suppresses": [
+   "ovel",
+   "bject",
+   "\u8f68",
+   "\u7b49\u529f\u80fd"
+  ]
+ },
+ {
+  "layer": 31,
+  "neuron": 84,
+  "score": 1.383,
+  "min_margin": 0.507,
+  "writes": [
+   "urat",
+   "\",\"\",\"",
+   "adorned",
+   "societal",
+   "challenging",
+   "crucial",
+   "transitioning",
+   "...'"
+  ],
+  "suppresses": [
+   "somebody",
+   "\u00c2\u0142",
+   "whilst",
+   "Whilst"
+  ]
+ }
+]
