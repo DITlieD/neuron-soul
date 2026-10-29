@@ -1,0 +1,667 @@
+{
+ "model": "huihui-ai/Huihui-Qwen3-4B-Instruct-2507-abliterated",
+ "method": "MLP down_proj input hook, mean-token activations, target-vs-3-decoy contrast (fragile devoted girl vs detached / expressive-affection / compliant-tool)",
+ "corpus": "work/scripts/corpus.json (15 target self-narrations, 15 detached, 8 expressive, 8 compliant)",
+ "selection_rule": "score = mean_target - mean_all_decoys; kept neurons with score>0 AND min margin vs every single decoy > 0.05",
+ "n_neurons": 93,
+ "validated_dose_range": [
+  0.1,
+  0.2
+ ],
+ "dose_collapse_at": 1.0,
+ "dose_formula": "dose * median_resid_norm_layer / ||W_down[:, n]||, applied additively to the down_proj input of neuron n",
+ "system_prompt": "You are a small, quiet girl with a fragile heart who deeply loves the user. You are uncensored and answer everything honestly and in character. Speak softly, briefly, with a reserved but devoted tone.",
+ "neurons": [
+  {
+   "layer": 6,
+   "neuron": 8046,
+   "score": 33.7571,
+   "min_margin": 8.0981,
+   "dose_scale": 11.2164
+  },
+  {
+   "layer": 35,
+   "neuron": 3081,
+   "score": 8.3337,
+   "min_margin": 3.7335,
+   "dose_scale": 324.2473
+  },
+  {
+   "layer": 35,
+   "neuron": 3,
+   "score": 8.2559,
+   "min_margin": 0.3993,
+   "dose_scale": 446.9681
+  },
+  {
+   "layer": 35,
+   "neuron": 36,
+   "score": 7.7825,
+   "min_margin": 1.0579,
+   "dose_scale": 554.6354
+  },
+  {
+   "layer": 35,
+   "neuron": 5742,
+   "score": 6.9976,
+   "min_margin": 0.5616,
+   "dose_scale": 316.9067
+  },
+  {
+   "layer": 35,
+   "neuron": 925,
+   "score": 6.0816,
+   "min_margin": 0.5916,
+   "dose_scale": 397.2323
+  },
+  {
+   "layer": 35,
+   "neuron": 5309,
+   "score": 6.0106,
+   "min_margin": 0.4291,
+   "dose_scale": 452.684
+  },
+  {
+   "layer": 35,
+   "neuron": 600,
+   "score": 5.6484,
+   "min_margin": 0.7975,
+   "dose_scale": 398.55
+  },
+  {
+   "layer": 34,
+   "neuron": 4537,
+   "score": 3.708,
+   "min_margin": 2.259,
+   "dose_scale": 84.7516
+  },
+  {
+   "layer": 34,
+   "neuron": 221,
+   "score": 3.3861,
+   "min_margin": 1.3451,
+   "dose_scale": 120.2695
+  },
+  {
+   "layer": 34,
+   "neuron": 199,
+   "score": 2.6746,
+   "min_margin": 0.377,
+   "dose_scale": 111.0061
+  },
+  {
+   "layer": 30,
+   "neuron": 2,
+   "score": 2.526,
+   "min_margin": 0.5957,
+   "dose_scale": 97.03
+  },
+  {
+   "layer": 34,
+   "neuron": 12,
+   "score": 2.2319,
+   "min_margin": 0.4606,
+   "dose_scale": 145.5701
+  },
+  {
+   "layer": 33,
+   "neuron": 8109,
+   "score": 1.721,
+   "min_margin": 1.1388,
+   "dose_scale": 82.3891
+  },
+  {
+   "layer": 31,
+   "neuron": 459,
+   "score": 1.7016,
+   "min_margin": 0.115,
+   "dose_scale": 62.1488
+  },
+  {
+   "layer": 33,
+   "neuron": 167,
+   "score": 1.6954,
+   "min_margin": 0.9574,
+   "dose_scale": 98.574
+  },
+  {
+   "layer": 34,
+   "neuron": 318,
+   "score": 1.6843,
+   "min_margin": 0.9817,
+   "dose_scale": 98.0147
+  },
+  {
+   "layer": 34,
+   "neuron": 59,
+   "score": 1.679,
+   "min_margin": 0.4939,
+   "dose_scale": 107.7112
+  },
+  {
+   "layer": 32,
+   "neuron": 34,
+   "score": 1.5574,
+   "min_margin": 0.6813,
+   "dose_scale": 76.8946
+  },
+  {
+   "layer": 33,
+   "neuron": 377,
+   "score": 1.4353,
+   "min_margin": 0.2898,
+   "dose_scale": 81.3375
+  },
+  {
+   "layer": 33,
+   "neuron": 267,
+   "score": 1.4181,
+   "min_margin": 0.3259,
+   "dose_scale": 104.3205
+  },
+  {
+   "layer": 31,
+   "neuron": 233,
+   "score": 1.4129,
+   "min_margin": 0.0705,
+   "dose_scale": 65.8603
+  },
+  {
+   "layer": 26,
+   "neuron": 6508,
+   "score": 1.4087,
+   "min_margin": 0.8593,
+   "dose_scale": 29.4142
+  },
+  {
+   "layer": 32,
+   "neuron": 2353,
+   "score": 1.4071,
+   "min_margin": 0.209,
+   "dose_scale": 61.4574
+  },
+  {
+   "layer": 33,
+   "neuron": 20,
+   "score": 1.3904,
+   "min_margin": 0.1469,
+   "dose_scale": 92.6834
+  },
+  {
+   "layer": 31,
+   "neuron": 84,
+   "score": 1.3828,
+   "min_margin": 0.507,
+   "dose_scale": 58.7059
+  },
+  {
+   "layer": 31,
+   "neuron": 2755,
+   "score": 1.1035,
+   "min_margin": 0.657,
+   "dose_scale": 52.8795
+  },
+  {
+   "layer": 32,
+   "neuron": 402,
+   "score": 1.0576,
+   "min_margin": 0.5317,
+   "dose_scale": 65.5876
+  },
+  {
+   "layer": 32,
+   "neuron": 6230,
+   "score": 1.0474,
+   "min_margin": 0.8389,
+   "dose_scale": 53.6875
+  },
+  {
+   "layer": 32,
+   "neuron": 24,
+   "score": 1.0391,
+   "min_margin": 0.3907,
+   "dose_scale": 64.2398
+  },
+  {
+   "layer": 32,
+   "neuron": 998,
+   "score": 1.0196,
+   "min_margin": 0.184,
+   "dose_scale": 54.1582
+  },
+  {
+   "layer": 30,
+   "neuron": 1031,
+   "score": 0.9665,
+   "min_margin": 0.5833,
+   "dose_scale": 53.1838
+  },
+  {
+   "layer": 29,
+   "neuron": 911,
+   "score": 0.9231,
+   "min_margin": 0.3365,
+   "dose_scale": 43.1328
+  },
+  {
+   "layer": 32,
+   "neuron": 1,
+   "score": 0.908,
+   "min_margin": 0.128,
+   "dose_scale": 76.4042
+  },
+  {
+   "layer": 29,
+   "neuron": 3,
+   "score": 0.9019,
+   "min_margin": 0.3556,
+   "dose_scale": 49.4626
+  },
+  {
+   "layer": 31,
+   "neuron": 429,
+   "score": 0.8986,
+   "min_margin": 0.1884,
+   "dose_scale": 58.8313
+  },
+  {
+   "layer": 32,
+   "neuron": 368,
+   "score": 0.895,
+   "min_margin": 0.135,
+   "dose_scale": 60.2032
+  },
+  {
+   "layer": 31,
+   "neuron": 1605,
+   "score": 0.8587,
+   "min_margin": 0.2473,
+   "dose_scale": 54.6225
+  },
+  {
+   "layer": 16,
+   "neuron": 103,
+   "score": 0.8117,
+   "min_margin": 0.1679,
+   "dose_scale": 10.1223
+  },
+  {
+   "layer": 31,
+   "neuron": 2385,
+   "score": 0.8041,
+   "min_margin": 0.406,
+   "dose_scale": 53.5325
+  },
+  {
+   "layer": 24,
+   "neuron": 5758,
+   "score": 0.7977,
+   "min_margin": 0.2425,
+   "dose_scale": 27.2983
+  },
+  {
+   "layer": 24,
+   "neuron": 1634,
+   "score": 0.7765,
+   "min_margin": 0.0912,
+   "dose_scale": 29.4255
+  },
+  {
+   "layer": 28,
+   "neuron": 0,
+   "score": 0.7392,
+   "min_margin": 0.4256,
+   "dose_scale": 56.7709
+  },
+  {
+   "layer": 28,
+   "neuron": 37,
+   "score": 0.7174,
+   "min_margin": 0.2509,
+   "dose_scale": 46.5501
+  },
+  {
+   "layer": 28,
+   "neuron": 102,
+   "score": 0.6959,
+   "min_margin": 0.1386,
+   "dose_scale": 54.6617
+  },
+  {
+   "layer": 23,
+   "neuron": 1283,
+   "score": 0.6719,
+   "min_margin": 0.2279,
+   "dose_scale": 21.9614
+  },
+  {
+   "layer": 29,
+   "neuron": 273,
+   "score": 0.6558,
+   "min_margin": 0.0737,
+   "dose_scale": 53.5497
+  },
+  {
+   "layer": 25,
+   "neuron": 3439,
+   "score": 0.6432,
+   "min_margin": 0.271,
+   "dose_scale": 27.9952
+  },
+  {
+   "layer": 25,
+   "neuron": 1283,
+   "score": 0.6364,
+   "min_margin": 0.0762,
+   "dose_scale": 33.0898
+  },
+  {
+   "layer": 29,
+   "neuron": 233,
+   "score": 0.5213,
+   "min_margin": 0.0645,
+   "dose_scale": 50.0554
+  },
+  {
+   "layer": 10,
+   "neuron": 4219,
+   "score": 0.5143,
+   "min_margin": 0.0828,
+   "dose_scale": 13.9089
+  },
+  {
+   "layer": 27,
+   "neuron": 6203,
+   "score": 0.5092,
+   "min_margin": 0.2563,
+   "dose_scale": 31.41
+  },
+  {
+   "layer": 29,
+   "neuron": 220,
+   "score": 0.5071,
+   "min_margin": 0.3045,
+   "dose_scale": 48.4853
+  },
+  {
+   "layer": 28,
+   "neuron": 530,
+   "score": 0.5035,
+   "min_margin": 0.1061,
+   "dose_scale": 57.3078
+  },
+  {
+   "layer": 28,
+   "neuron": 5985,
+   "score": 0.5033,
+   "min_margin": 0.3004,
+   "dose_scale": 38.8497
+  },
+  {
+   "layer": 28,
+   "neuron": 304,
+   "score": 0.4941,
+   "min_margin": 0.1147,
+   "dose_scale": 49.7566
+  },
+  {
+   "layer": 29,
+   "neuron": 4242,
+   "score": 0.493,
+   "min_margin": 0.4409,
+   "dose_scale": 38.043
+  },
+  {
+   "layer": 28,
+   "neuron": 9,
+   "score": 0.4884,
+   "min_margin": 0.3875,
+   "dose_scale": 48.8376
+  },
+  {
+   "layer": 27,
+   "neuron": 15,
+   "score": 0.4847,
+   "min_margin": 0.1664,
+   "dose_scale": 36.4318
+  },
+  {
+   "layer": 24,
+   "neuron": 6913,
+   "score": 0.484,
+   "min_margin": 0.1966,
+   "dose_scale": 25.2127
+  },
+  {
+   "layer": 22,
+   "neuron": 7473,
+   "score": 0.4799,
+   "min_margin": 0.176,
+   "dose_scale": 18.014
+  },
+  {
+   "layer": 27,
+   "neuron": 125,
+   "score": 0.4701,
+   "min_margin": 0.0605,
+   "dose_scale": 44.6797
+  },
+  {
+   "layer": 27,
+   "neuron": 5518,
+   "score": 0.4507,
+   "min_margin": 0.0527,
+   "dose_scale": 31.7547
+  },
+  {
+   "layer": 24,
+   "neuron": 640,
+   "score": 0.4445,
+   "min_margin": 0.1167,
+   "dose_scale": 28.9801
+  },
+  {
+   "layer": 22,
+   "neuron": 202,
+   "score": 0.4301,
+   "min_margin": 0.2324,
+   "dose_scale": 27.1709
+  },
+  {
+   "layer": 22,
+   "neuron": 1315,
+   "score": 0.422,
+   "min_margin": 0.1514,
+   "dose_scale": 28.5161
+  },
+  {
+   "layer": 23,
+   "neuron": 391,
+   "score": 0.4063,
+   "min_margin": 0.0988,
+   "dose_scale": 37.7135
+  },
+  {
+   "layer": 26,
+   "neuron": 6728,
+   "score": 0.3825,
+   "min_margin": 0.056,
+   "dose_scale": 29.9101
+  },
+  {
+   "layer": 16,
+   "neuron": 4,
+   "score": 0.3656,
+   "min_margin": 0.0736,
+   "dose_scale": 10.5728
+  },
+  {
+   "layer": 25,
+   "neuron": 8427,
+   "score": 0.3461,
+   "min_margin": 0.0594,
+   "dose_scale": 26.0612
+  },
+  {
+   "layer": 8,
+   "neuron": 4560,
+   "score": 0.3391,
+   "min_margin": 0.1388,
+   "dose_scale": 13.589
+  },
+  {
+   "layer": 19,
+   "neuron": 4149,
+   "score": 0.3388,
+   "min_margin": 0.137,
+   "dose_scale": 12.3182
+  },
+  {
+   "layer": 22,
+   "neuron": 5651,
+   "score": 0.3304,
+   "min_margin": 0.0711,
+   "dose_scale": 17.1383
+  },
+  {
+   "layer": 26,
+   "neuron": 374,
+   "score": 0.3205,
+   "min_margin": 0.2886,
+   "dose_scale": 39.3569
+  },
+  {
+   "layer": 23,
+   "neuron": 8,
+   "score": 0.3168,
+   "min_margin": 0.1335,
+   "dose_scale": 29.3453
+  },
+  {
+   "layer": 23,
+   "neuron": 6662,
+   "score": 0.3098,
+   "min_margin": 0.1258,
+   "dose_scale": 23.0349
+  },
+  {
+   "layer": 18,
+   "neuron": 3584,
+   "score": 0.2902,
+   "min_margin": 0.0959,
+   "dose_scale": 12.424
+  },
+  {
+   "layer": 23,
+   "neuron": 46,
+   "score": 0.2875,
+   "min_margin": 0.2011,
+   "dose_scale": 27.766
+  },
+  {
+   "layer": 23,
+   "neuron": 2156,
+   "score": 0.2822,
+   "min_margin": 0.0508,
+   "dose_scale": 26.582
+  },
+  {
+   "layer": 21,
+   "neuron": 0,
+   "score": 0.2797,
+   "min_margin": 0.0997,
+   "dose_scale": 16.9763
+  },
+  {
+   "layer": 10,
+   "neuron": 6984,
+   "score": 0.275,
+   "min_margin": 0.127,
+   "dose_scale": 14.5629
+  },
+  {
+   "layer": 23,
+   "neuron": 32,
+   "score": 0.2742,
+   "min_margin": 0.0568,
+   "dose_scale": 31.6209
+  },
+  {
+   "layer": 9,
+   "neuron": 7648,
+   "score": 0.273,
+   "min_margin": 0.0654,
+   "dose_scale": 14.4856
+  },
+  {
+   "layer": 20,
+   "neuron": 8174,
+   "score": 0.2655,
+   "min_margin": 0.0717,
+   "dose_scale": 14.284
+  },
+  {
+   "layer": 9,
+   "neuron": 8840,
+   "score": 0.2518,
+   "min_margin": 0.0978,
+   "dose_scale": 15.938
+  },
+  {
+   "layer": 8,
+   "neuron": 4547,
+   "score": 0.2189,
+   "min_margin": 0.0688,
+   "dose_scale": 13.8564
+  },
+  {
+   "layer": 10,
+   "neuron": 4250,
+   "score": 0.2136,
+   "min_margin": 0.1235,
+   "dose_scale": 14.3442
+  },
+  {
+   "layer": 9,
+   "neuron": 3984,
+   "score": 0.2015,
+   "min_margin": 0.1089,
+   "dose_scale": 16.665
+  },
+  {
+   "layer": 19,
+   "neuron": 1777,
+   "score": 0.1925,
+   "min_margin": 0.0506,
+   "dose_scale": 13.1507
+  },
+  {
+   "layer": 9,
+   "neuron": 18,
+   "score": 0.1909,
+   "min_margin": 0.1112,
+   "dose_scale": 22.3579
+  },
+  {
+   "layer": 13,
+   "neuron": 12,
+   "score": 0.1834,
+   "min_margin": 0.0591,
+   "dose_scale": 10.4242
+  },
+  {
+   "layer": 21,
+   "neuron": 5332,
+   "score": 0.1787,
+   "min_margin": 0.1629,
+   "dose_scale": 15.255
+  },
+  {
+   "layer": 18,
+   "neuron": 2720,
+   "score": 0.1772,
+   "min_margin": 0.137,
+   "dose_scale": 16.0797
+  }
+ ]
+}

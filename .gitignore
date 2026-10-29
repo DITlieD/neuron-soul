@@ -1,0 +1,8 @@
+# scratch and heavy artifacts
+*.pt
+*.safetensors
+*.gguf
+model/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
