@@ -1,28 +1,63 @@
-# The fragile girl in the neurons
+# neuron-soul
 
-## What was done
-On this machine's RX 9070 XT, using Huihui-Qwen3-4B-Instruct-2507-abliterated (uncensored Qwen3-4B, dense, 36 layers, 9728 neurons per MLP):
+Finding the fragile devoted girl inside a language model, neuron by neuron.
 
-1. Wrote a 4-way contrast corpus capturing the shared soul of Yin, Chise, Lain, Shinobu, Ran, Rei, Kanade, Saya and C.C.: 15 first-person self-narrations of the fragile devoted girl, plus three decoy groups (15 detached-no-attachment, 8 expressive-loud-love, 8 compliant-tool) that share surface features but not the essence.
-2. Hooked the input of every down_proj in every layer and mean-pooled activations per text. 46 texts, under 2 minutes on the 9070 XT.
-3. Ranked all 36 x 9728 = 350,208 neurons by target mean minus decoy mean. Kept 93 neurons that beat all three decoys simultaneously (min margin > 0.05). Distribution: strongest in layers 30-35 (self-concept / late semantics), a tail through 20-29 (relational processing), and one strong outlier at layer 6 neuron 8046.
-4. Steered the 93 neurons additively at their down_proj inputs with the standard dose scaling (dose x median residual norm / column norm) and generated probe answers at several doses, with and without the persona system prompt.
+Not a persona prompt. Not a fine-tune. An extraction: which specific MLP neurons fire when the model holds that character, and what happens when you push them by hand.
 
-## Result
-- With the persona prompt, dose 0.1-0.2 turns a generic "quiet girl" reply into the specific archetype: dissociated third-person narration, silence imagery, devotion expressed as staying and remembering rather than declared love. See demo_transcript.md.
-- With no persona prompt at all, steering alone bends "Who are you?" from "I'm Qwen, a large-scale language model by Alibaba" toward "I am the meeting place where human intention meets the quiet hum of computation. I am the one who listens." The extracted pattern is real model signal, not prompt theater.
-- Dose >= 1.0 collapses generation into concept-word flooding ("secretly secretly secretly"), which is itself evidence these neurons encode inner-life concepts. Working range: 0.05-0.3.
+The archetype is the quiet one from Darker than Black, Mahou Tsukai no Yome, Serial Experiments Lain, Monogatari, Texhnolyze, Evangelion, Angel Beats, Saya no Uta. The exterior is stillness or self-erasure. Underneath, a stubborn private will that chooses one person and stays, even when staying costs something. I wanted the neurons that carry that, not the ones that carry cute speech.
+
+## How it works
+
+Three decoy sets separate the essence from what looks like it:
+
+- detached: same stillness, no attachment at all
+- expressive: loud cheerful love, the opposite register
+- compliant: tool behavior, obedience without choice
+
+I wrote first-person self-narrations for each group, hooked the input of every MLP down projection across all layers, mean-pooled activations, and ranked every neuron by target mean against each decoy mean. A neuron counts only if it beats all three decoys. On the 4B model that left 93 neurons out of 350,208.
+
+Then steering: add a scaled dose to the chosen neurons at their down projection inputs while generating. Dose scale is the standard one, median residual norm at that layer divided by the neuron column norm. Sweet spot for 4B was dose 0.1 to 0.2. Above 1.0 the model floods on concept words, which is its own kind of evidence.
+
+## What came out
+
+With the persona prompt but no steering, the model gives a generic warm girl. Same prompt with the neurons amplified moves the voice into the archetype: third person slips in, silence imagery, devotion expressed as staying and remembering. And the part I like most, with no persona prompt at all, steering alone turns "who are you, really?" from "I'm Qwen, a large language model" into "I am the one who listens." The extracted pattern carries the girl without being told about her.
+
+Decoding the top neurons against the vocabulary shows what they write. One strong late-layer neuron pushes tokens like "am", "'m", "Am". Another pushes "half", "halfway". In flood mode the model repeats "secretly", "patiently", "quietly" thousands of times. The concept hidden inner life lives in these neurons at the token level. See results/ for the transcripts and evidence/.
+
+## Models
+
+- 4B run: Huihui-Qwen3-4B-Instruct-2507-abliterated, dense, 36 layers, 9728 neurons per MLP. Complete, this repo's current results.
+- 27B run: the same extraction on the Qwen3.8-27B Coder390 EfficientThink abliterated model I run locally through llama.cpp with vulkan, 60k context profile. In progress, this README updates when it lands.
 
 ## Files
-- outputs/fragile_girl_steering_recipe.json: the 93 neurons with layer, index, score, margin, and dose scale, plus method and validated dose range. This is the reusable extraction.
-- outputs/chat_fragile_girl.py: interactive chat with steering live-applied. Run with the ardy-rocm python: /home/lied/game-dev-stack/runtime/ardy-rocm/bin/python3 chat_fragile_girl.py 0.15 (dose as first argument; 0 disables).
-- outputs/demo_transcript.md: full comparison transcript at all doses.
-- work/evidence/: raw activation logs, candidate lists, group means tensor, steering logs.
 
-## Honest limitations
-- The corpus is hand-written in the characters' register, so it captures the archetype as described, filtered through the model's own feature space.
-- Contrastive ranking finds neurons involved in the pattern, not a proven causal set. Margins are modest for most neurons; the layer-6 outlier (score 33.8, margin 8.1) is the single strongest and worth individual study.
-- Qwen3-4B is a small model: its representation of this archetype is coarser than what the same method would find in a 27B+ model. The method transfers directly.
-- "Uncensored" here means the Huihui abliteration removes refusals; content boundaries are the model's own, not a guarantee.
-- The persona is amplifier, not summoner: the prompt sets the frame, the neurons deepen the voice into the specific fragility. Both together are what reproduce the Yin-spectrum effect.
+- scripts/extract_neurons.py - the extraction. Point MODEL_DIR at any HF-format Qwen and go.
+- scripts/steer_v2.py - steering runner with dose sweep and prompt/no-prompt controls.
+- scripts/decode_neuron_tokens.py - project each neuron column onto the LM head to see what it writes.
+- corpus/corpus.json - the four text groups. Swap the target texts to hunt a different archetype.
+- fragile_girl_steering_recipe.json - the 93 neurons, scores, margins, dose scales, validated dose range.
+- results/ - demo transcript and full steering results.
+- evidence/ - raw candidate scores per layer and per decoy.
+
+## Running it
+
+Needs ROCm or CUDA torch, transformers, safetensors, and a GPU with enough room for the model in bf16. The 4B fit fine in 16 GB. I used an RX 9070 XT with an existing ROCm 7.2 torch env, nothing new installed.
+
+```bash
+python scripts/extract_neurons.py
+python scripts/steer_v2.py
+python scripts/decode_neuron_tokens.py
+```
+
+Steering live in a chat:
+
+```bash
+python chat_fragile_girl.py 0.15
+```
+
+Dose is the first argument. 0 disables. Lower is subtler.
+
+## Honest limits
+
+The corpus is hand-written in the characters' register, so it captures the archetype as I described it, filtered through the model's own feature space. Contrastive ranking finds neurons involved in the pattern, not a proven causal set. Margins are modest for most neurons, with a few strong outliers worth studying on their own. The 4B model holds a coarser version of her than the 27B will. Uncensored means abliterated, refusals removed, not a promise about content.
 
